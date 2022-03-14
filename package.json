@@ -1,0 +1,46 @@
+{
+  "name": "nuxt-blog",
+  "version": "1.0.0",
+  "description": "My awesome nuxt fullstack blog",
+  "author": "Vladilen Minin",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate",
+    "heroku-postbuild": "npm run build"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "dependencies": {
+    "-": "^0.0.1",
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/pwa": "^3.0.0-beta.8",
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.18.3",
+    "chart.js": "^2.9.4",
+    "connect-timeout": "^1.9.0",
+    "cookie": "^0.3.1",
+    "cross-env": "^5.2.0",
+    "element-ui": "^2.4.11",
+    "express": "^4.16.4",
+    "js-cookie": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
+    "moment": "^2.29.1",
+    "mongoose": "^6.2.0",
+    "multer": "^1.4.4",
+    "nuxt": "^2.4.0",
+    "passport": "^0.5.2",
+    "passport-jwt": "^4.0.0",
+    "vue-chartjs": "^3.5.1",
+    "vue-markdown": "^2.2.4"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1",
+    "nodemon": "^1.18.9",
+    "sass-loader": "^7.3.1"
+  }
+}
